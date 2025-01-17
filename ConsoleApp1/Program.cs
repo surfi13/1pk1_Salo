@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ConsoleApp1
+namespace Task_02_04
 {
 
     //Пользователь вводит своё д/р произвести расчет является ли пользователь соввершеннолетним на текущаю дату и вывести сообщение об этом
