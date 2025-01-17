@@ -1,5 +1,7 @@
 ﻿using System;
 
+//02 Найти значение выражения при a=14, b=8 c= п/4
+
 class Program
 {
     static void Main()
