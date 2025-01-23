@@ -26,7 +26,7 @@ namespace Task_03_07
                 v = v0 + 9.8 * i;
                 Console.WriteLine(v + "        " + i);
             }
-            Console.ReadLine();
+            Console.ReadKey();
         }
     }
 }
