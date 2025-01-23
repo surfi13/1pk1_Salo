@@ -27,7 +27,7 @@ namespace Task_03_05
 
             double j;
 
-            for(double i = dio1; i < dio2; i += shag) {
+            for(double i = dio1; i <= dio2; i += shag) {
                 j = i * 1.8 + 32;
                 Console.WriteLine(i + "         " + j);
             }
