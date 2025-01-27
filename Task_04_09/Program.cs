@@ -15,26 +15,24 @@ namespace Task_04_09
         {
             Random rdn = new Random();
             int[] mas = new int[50];
+            int n = 0;
 
             for (int i = 0; i < 50; i++)
             {
-                mas[i] = rdn.Next(0, 30);
+                mas[i] = rdn.Next(0, 300);
             }
-            
-            for(int j = 0; j < 50; j++)
+
+            for (int i = 0; i < 50; i++)
             {
-                bool dup = false;
-                for (int k = 0; k < 50; k++)
+                for (int j = i +1; j < 50; j++)
                 {
-                    if (mas[j] == mas[k])
-                    {
-                        dup = true;
-                        break;
-                    }
-                if(!dup)
-                    Console.WriteLine(mas[j]);
+                    if (mas[i] == mas[j])
+                        n++;
                 }
+                if (n == 0)
+                    Console.Write(mas[i] + " ");
             }
+
             Console.ReadKey();
         }
     }
