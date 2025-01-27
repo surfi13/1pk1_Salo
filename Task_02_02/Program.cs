@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace Task_02_02
 {
 
-    //Найти значение выражения при а = 14, b = 8 , с = п/4
+    //Найти значение выражения при а = 14, b = 8 , с = п/4 
 
     class Program
     {
