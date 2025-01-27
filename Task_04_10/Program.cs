@@ -17,22 +17,33 @@ namespace Task_04_10
 
            Random rdn = new Random();
             int[] mas = new int[10];
+            int[] mas1 = new int[10];
 
             for (int i = 0; i < 10; i++)
             {
                 mas[i] = rdn.Next(-10, 11);
-                Console.Write(mas[i]);
+                Console.Write(mas[i] + " ");
             }
 
-            for (int j = 4; j > 0; j--)
+            for (int j = 0; j < 5; j++)
             {
-                for (int k = 0; k < 5; k++)
-                {
-                    mas[j] = mas[k];
-                }
+                mas1[j] = mas[4 - j];
             }
 
-            
+            for (int j = 0; j < 5; j++)
+            {
+                mas1[5 + j] = mas[9 - j];
+            }
+
+            Console.WriteLine("");
+
+            for (int i = 0; i < 10; i++)
+            {
+
+                Console.Write(mas1[i] + " ");
+            }
+
+
 
             Console.ReadKey();
         }

@@ -19,10 +19,23 @@ namespace Task_04_09
             for (int i = 0; i < 50; i++)
             {
                 mas[i] = rdn.Next(0, 30);
-
-                
             }
             
+            for(int j = 0; j < 50; j++)
+            {
+                bool dup = false;
+                for (int k = 0; k < 50; k++)
+                {
+                    if (mas[j] == mas[k])
+                    {
+                        dup = true;
+                        break;
+                    }
+                if(!dup)
+                    Console.WriteLine(mas[j]);
+                }
+            }
+            Console.ReadKey();
         }
     }
 }
