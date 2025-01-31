@@ -16,46 +16,47 @@ namespace Task_05_04
         static void Main(string[] args)
         {
             Console.WriteLine("Введите размерность массива");
-            int n = 2;// Convert.ToInt32(Console.ReadLine());
+            int n =  Convert.ToInt32(Console.ReadLine());
 
-            int[,] mass = { { 2, 0 }, {0, 2 } };//new int[n, n];
+            int[,] mass = new int[n, n];
             Random rnd = new Random();
 
             for (int i = 0; i < n; i++)
             {
                 for (int j = 0; j < n; j++)
                 {
-                    mass[i, j] = rnd.Next(); 
+                    mass[i, j] = rnd.Next(-100, 101); 
                 }
 
             }
 
             for (int i = 0; i < n; i++)
             {
-                for (int j = 0; j < n; j++)
+                for (int j = 1; j < n; j++)
                 {
                     if (mass[i, j] != 0)
                     {
+                        if (i == j)
+                            continue;
+
                         Console.WriteLine("Массив не диогональный");
-                        break;
-                    }
-                    else
-                    {
-                        for (int k = 0; k < n; k++)
-                        {
-                            for (int g = 0; g < n; g++)
-                            {
-                                Console.Write(mass[k, g] + " ");
-                                if (k == g)
-                                    Console.BackgroundColor = ConsoleColor.Red;
-                            }
-                            Console.WriteLine("");
-                        }
-
-
+                        
                     }
                 }
              }
+
+            for (int k = 0; k < n; k++)
+            {
+                for (int g = 0; g < n; g++)
+                {
+                    if (k == g)
+                        Console.BackgroundColor = ConsoleColor.Red;
+                    Console.Write(mass[k, g] + " ");
+                    Console.BackgroundColor = ConsoleColor.Black;
+                }
+                Console.WriteLine("");
+            }
+
             Console.ReadKey();
         }
      }
