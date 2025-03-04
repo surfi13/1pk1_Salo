@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Task_10_06
 {
-    /*Создать Метод ArrayGeneration не возвращающий значения, принимает целое число n,
+    /*Создать Метод ArrayGeneration не возвращающий значения, принимает целое число n, 
      выводит на консоль сгенерированный массив размерностью n*n*/
 
     class Program
