@@ -15,11 +15,19 @@ namespace Task_20_06
         static void Main(string[] args)
         {
             TrafficLightColor color = TrafficLightColor.Red;
-            
-            while (true)
+            if (Console.ReadKey().Key == ConsoleKey.R)
             {
-
+                Console.WriteLine("Red");
             }
+            if (Console.ReadKey().Key == ConsoleKey.Y)
+            {
+                Console.WriteLine("Yellow");
+            }
+            else if (Console.ReadKey().Key == ConsoleKey.G)
+            {
+                Console.WriteLine("Green");
+            }
+            Console.ReadKey();
         }
     }
 }
