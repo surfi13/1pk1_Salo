@@ -6,6 +6,10 @@ using System.Threading.Tasks;
 
 namespace Tast_20_04
 {
+    /*создайте прорпииу для учета транспортных средств
+     храните мписок
+    добавте метод постета
+    реализульте поиск и вывод инормации*/
     class Program
     {
         static void Main(string[] args)
