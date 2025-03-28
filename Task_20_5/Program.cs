@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace Task_20_5
 {
+    /*напишите программу имитирующую сиистему авторизации
+     создальте метод проверяющий может ли пользоваттель сделать это
+    на основе уровня выводить ссобщение*/
     class Program
     {
         static void Main(string[] args)
