@@ -7,7 +7,10 @@ using System.Threading.Tasks;
 namespace Task_19_01
 {
     class Program
-    {
+    { 
+        /*Напишите программу где пользователь вводит прозвольный текст в строку после
+         чего она запрашивает подстроку для поиска. если она найдена то она заменяетя 
+        на строку которая запрпшивается у пользователя*/
         static void Main(string[] args)
         {
 
@@ -25,6 +28,7 @@ namespace Task_19_01
             else
                 Console.WriteLine("Строка не найдена");
             Console.ReadKey();
+
         }
     }
 }
